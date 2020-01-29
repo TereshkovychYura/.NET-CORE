@@ -4,10 +4,31 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/main.css"/>
 </head>
+
 <body>
-    <div>
+    <nav>
+        <span id="brand">
+            <a href="javascript:;">All Phones</a>
+        </span>
+        <ul id="menu">
+            <li><a href="javascript:;">HOME</a></li>
+            <li><a href="javascript:;">ABOUT</a></li>
+            <li><a href="javascript:;">CONTACT</a></li>
+            <li><a href="javascript:;">FAQ</a></li>
+        </ul>
+
+        <div id="toggle">
+            <div class="span" id="one"></div>
+            <div class="span" id="two"></div>
+            <div class="span" id="three"></div>
+        </div>
+    </nav>
+    <div class="container">
         @RenderBody()
     </div>
+    <script src="~/js/main.js"></script>
 </body>
 </html>
