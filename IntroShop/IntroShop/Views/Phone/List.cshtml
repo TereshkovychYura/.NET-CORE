@@ -1,14 +1,13 @@
 ﻿@{
     foreach (var item in Model.allPhones)
     {
-            <div>
+            <div class="product-block">
                 <img class="phone-image" src="@item.img" alt="@item.name" />
-
-                <div>Vendor: @item.name</div>
-                <div>Description: @item.description</div>
-                <div>Price: @item.price</div>
+                <div class="product-info">
+                    <h2>Vendor: @item.name</h2>
+                    <p>Description: @item.description</p>
+                    <p>Price: @item.price</p>
+                </div>
             </div>
-
-
-        }
     }
+}

@@ -24,3 +24,4 @@ C:\Users\frez70\Desktop\.NET CORE\IntroShop\IntroShop\obj\Debug\netcoreapp2.2\Ra
 C:\Users\frez70\Desktop\.NET CORE\IntroShop\IntroShop\obj\Debug\netcoreapp2.2\IntroShop.RazorTargetAssemblyInfo.cs
 C:\Users\frez70\Desktop\.NET CORE\IntroShop\IntroShop\obj\Debug\netcoreapp2.2\IntroShop.Views.pdb
 C:\Users\frez70\Desktop\.NET CORE\IntroShop\IntroShop\obj\Debug\netcoreapp2.2\IntroShop.csproj.CopyComplete
+C:\Users\frez70\Desktop\.NET CORE\IntroShop\IntroShop\obj\Debug\netcoreapp2.2\Razor\Views\MotherBoard\List.g.cshtml.cs

@@ -1,9 +1,23 @@
 ﻿body {
-    background-color:beige;
+    background-color: lightgray;
 }
+
 .phone-image{
     height:350px;
+    margin:5px;
 }
+
+.product-block {
+    border: 2px solid black;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-color:white;
+}
+
+.product-info{
+    display:inline-block;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -15,13 +29,14 @@ html {
     padding: 0;
     margin: 0;
     list-style: none;
+
     text-decoration: none;
 }
 
 body {
 }
 
-nav {
+ nav {
     background: #212121;
     height: 70px;
     z-index: 1;
@@ -39,10 +54,12 @@ nav {
         nav #brand a {
             color: #fff;
             transition: all 0.3s ease-out;
+            text-decoration: none;
         }
 
             nav #brand a:hover {
                 color: #777777;
+                text-decoration: none;
             }
 
     nav #menu {
@@ -62,10 +79,12 @@ nav {
 
             nav #menu li a {
                 color: #fff;
+                text-decoration: none;
             }
 
             nav #menu li:hover {
                 background: #333;
+                text-decoration: none;
             }
 
 #toggle {
