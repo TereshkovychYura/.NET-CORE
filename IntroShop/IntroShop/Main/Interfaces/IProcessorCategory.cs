@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntroShop.Main.Interfaces
 {
-    interface IProcessorCategory
+    public interface IProcessorCategory
     {
         IEnumerable<ProcessorCategory> AllProcessorCategories { get; }
     }

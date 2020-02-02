@@ -1,0 +1,13 @@
+﻿@{
+    foreach (var item in Model.allSSDs)
+    {
+        <div class="product-block">
+            <img class="phone-image" src="@item.img" alt="@item.name" />
+            <div class="product-info">
+                <h2>Vendor: @item.name</h2>
+                <p>Description: @item.description</p>
+                <p>Price: @item.price</p>
+            </div>
+        </div>
+    }
+}

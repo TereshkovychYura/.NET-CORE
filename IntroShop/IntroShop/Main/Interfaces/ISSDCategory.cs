@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace IntroShop.Main.Interfaces
 {
-    public interface IAllProcessors
+    public interface ISSDCategory
     {
-        IEnumerable<Processor> Processors { get; }
+        IEnumerable<SSDCategory> AllSSDCategories { get; }
     }
 }

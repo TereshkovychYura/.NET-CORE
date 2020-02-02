@@ -22,6 +22,13 @@ namespace IntroShop
 
             services.AddTransient<IAllMotherBoards, MockMotherBoards>();
             services.AddTransient<IMotherBoardCategory, MockMotherBoardCategory>();
+
+            services.AddTransient<IAllProcessors, MockProcessors>();
+            services.AddTransient<IProcessorCategory, MockProcessorCategory>();
+
+            services.AddTransient<IAllSSDs, MockSSD>();
+            services.AddTransient<ISSDCategory, MockSSDCategory>();
+
             services.AddMvc();
         }
 
