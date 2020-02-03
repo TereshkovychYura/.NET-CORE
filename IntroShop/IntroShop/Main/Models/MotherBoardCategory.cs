@@ -8,7 +8,7 @@ namespace IntroShop.Main.Models
     public class MotherBoardCategory
     {
         public int id { get; set; }
-        public string categotyName { get; set; }
+        public string categoryName { get; set; }
         public string categoryDescription { get; set; }
         public List<MotherBoard> phones { get; set; }
     }

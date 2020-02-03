@@ -15,8 +15,8 @@ namespace IntroShop.Main.MockData
             {
                 return new List<ProcessorCategory>
                 {
-                    new ProcessorCategory{ categotyName= "Gamer", categoryDescription= "Processor with hight price and extra functions"},
-                    new ProcessorCategory{ categotyName= "Simple", categoryDescription= "Processor with low price without extra functions"}
+                    new ProcessorCategory{ categoryName= "Gamer", categoryDescription= "Processor with hight price and extra functions"},
+                    new ProcessorCategory{ categoryName= "Simple", categoryDescription= "Processor with low price without extra functions"}
                 };
             }
         }

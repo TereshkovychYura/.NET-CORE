@@ -2,23 +2,31 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IntroShop.Main;
 using IntroShop.Main.Interfaces;
 using IntroShop.Main.MockData;
+using IntroShop.Main.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace IntroShop
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        private IConfigurationRoot _dbConf;
+        public Startup(IHostingEnvironment ENV)
+        {
+            _dbConf = new ConfigurationBuilder().SetBasePath(ENV.ContentRootPath).AddJsonFile("settings.json").Build();
+        }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IAllPhones, MockPhones>();
-            services.AddTransient<IPhoneCategory, MockCategory>();
+            services.AddDbContext<DBContent>(options => options.UseSqlServer(_dbConf.GetConnectionString("DefaultConnection")));
+            services.AddTransient<IAllPhones, PhoneRepository>();
+            services.AddTransient<IPhoneCategory, CategoryRepository>();
 
             services.AddTransient<IAllMotherBoards, MockMotherBoards>();
             services.AddTransient<IMotherBoardCategory, MockMotherBoardCategory>();
@@ -39,7 +47,12 @@ namespace IntroShop
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
-            
+
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                DBContent content = scope.ServiceProvider.GetRequiredService<DBContent>();
+                DBObjects.Initial(content);
+            }
         }
     }
 }

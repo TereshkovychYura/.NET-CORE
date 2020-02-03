@@ -15,8 +15,8 @@ namespace IntroShop.Main.MockData
             {
                 return new List<Category>
                 {
-                    new Category{ categotyName= "Flagman", categoryDescription= "Phone with hight price and extra functions"},
-                    new Category{ categotyName= "Budget", categoryDescription= "Phone with low price without extra functions"}
+                    new Category{ categoryName= "Flagman", categoryDescription= "Phone with hight price and extra functions"},
+                    new Category{ categoryName= "Budget", categoryDescription= "Phone with low price without extra functions"}
                 };
             }
         }

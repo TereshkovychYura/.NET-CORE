@@ -54,3 +54,5 @@ D:\.NET-CORE\IntroShop\IntroShop\obj\Debug\netcoreapp2.2\IntroShop.Views.pdb
 D:\.NET-CORE\IntroShop\IntroShop\obj\Debug\netcoreapp2.2\IntroShop.csproj.CopyComplete
 D:\.NET-CORE\IntroShop\IntroShop\obj\Debug\netcoreapp2.2\Razor\Views\Processor\List.g.cshtml.cs
 D:\.NET-CORE\IntroShop\IntroShop\obj\Debug\netcoreapp2.2\Razor\Views\SSD\List.g.cshtml.cs
+C:\Users\frez70\Desktop\.NET CORE\IntroShop\IntroShop\obj\Debug\netcoreapp2.2\Razor\Views\Processor\List.g.cshtml.cs
+C:\Users\frez70\Desktop\.NET CORE\IntroShop\IntroShop\obj\Debug\netcoreapp2.2\Razor\Views\SSD\List.g.cshtml.cs

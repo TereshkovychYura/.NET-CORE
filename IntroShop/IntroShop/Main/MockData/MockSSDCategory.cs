@@ -15,8 +15,8 @@ namespace IntroShop.Main.MockData
             {
                 return new List<SSDCategory>
                 {
-                    new SSDCategory{ categotyName= "Up to 500 GB", categoryDescription= "SSD with less than 500 GB memory"},
-                    new SSDCategory{ categotyName= "More than 500 GB", categoryDescription= "SSD with more than 500 GB memory"}
+                    new SSDCategory{ categoryName= "Up to 500 GB", categoryDescription= "SSD with less than 500 GB memory"},
+                    new SSDCategory{ categoryName= "More than 500 GB", categoryDescription= "SSD with more than 500 GB memory"}
                 };
             }
         }

@@ -15,8 +15,8 @@ namespace IntroShop.Main.MockData
             {
                 return new List<MotherBoardCategory>
                 {
-                    new MotherBoardCategory{ categotyName= "Gamer", categoryDescription= "Mother board with hight price and extra functions"},
-                    new MotherBoardCategory{ categotyName= "Simple", categoryDescription= "Mother board low price without extra functions"}
+                    new MotherBoardCategory{ categoryName= "Gamer", categoryDescription= "Mother board with hight price and extra functions"},
+                    new MotherBoardCategory{ categoryName= "Simple", categoryDescription= "Mother board low price without extra functions"}
                 };
             }
         }
